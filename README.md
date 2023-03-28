@@ -2,4 +2,4 @@
 
 Adds a free market to gregtech among other things
 
-### mog us
+### mong us
