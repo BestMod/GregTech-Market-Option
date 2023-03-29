@@ -1,8 +1,7 @@
 package gtmo.entity;
 
 import gtmo.GregTechMarketOption;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.RenderSnowMan;
+import gtmo.entity.scavenger.EntityScavenger;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -11,7 +10,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 

@@ -1,4 +1,4 @@
-package gtmo.entity;
+package gtmo.entity.scavenger;
 
 import gtmo.GregTechMarketOption;
 import net.minecraft.client.model.ModelPlayer;
