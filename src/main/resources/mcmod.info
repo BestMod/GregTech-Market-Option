@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "gtmo",
+  "name": "GregTech Market Option",
+  "description": "Adding a free market to GregTech",
+  "version": "0.0.1",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
+  "authorList": ["beanie"],
+  "credits": "beanie",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
