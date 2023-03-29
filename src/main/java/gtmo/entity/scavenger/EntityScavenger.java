@@ -1,6 +1,5 @@
 package gtmo.entity.scavenger;
 
-import gtmo.entity.ScavengerTrades;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.pathfinding.Path;
@@ -8,7 +7,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class EntityScavenger extends EntityLiving {
-    private ScavengerTrades scavengerTrades;
+    @Override
+    public boolean canDespawn() {
+        return false;
+    }
+
+    @Override
+    public void onUpdate() {
+        super.onUpdate();
+    }
     public EntityScavenger(World world) {
         super(world);
 
@@ -16,9 +23,6 @@ public class EntityScavenger extends EntityLiving {
         this.setSize(0.6F, 1.8F);
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.5D);
-
-        // Initialize the custom trades
-        this.scavengerTrades = new ScavengerTrades();
     }
 
     // Override the updateAITasks method to define the NPC's behavior.
