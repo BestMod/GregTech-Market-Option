@@ -20,8 +20,15 @@ public class GTMOEntities {
     @SubscribeEvent
     public static void onEntityRegistry(RegistryEvent.Register<EntityEntry> event)
     {
+        event.getRegistry().register(EntityEntryBuilder.create().entity(EntityRaider.class)
+                .id(new ResourceLocation(GregTechMarketOption.MODID, "raider"), 28)
+                .name("raider")
+                .tracker(80, 3, true)
+                .spawn(EnumCreatureType.CREATURE, 2, 1, 3, EntityRaider.POSSIBLE_BIOME_SPAWNS)
+                .egg(0x3d352f, 0xf0ded1).build());
     }
     @SideOnly(Side.CLIENT)
     public static void registerRenders() {
+        RenderingRegistry.registerEntityRenderingHandler(EntityRaider.class, RenderRaider::new);
     }
 }
