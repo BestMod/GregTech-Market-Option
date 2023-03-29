@@ -26,6 +26,11 @@ public class GTMOEntities {
                 .tracker(80, 3, true)
                 .spawn(EnumCreatureType.CREATURE, 2, 1, 3, EntityRaider.POSSIBLE_BIOME_SPAWNS)
                 .egg(0x3d352f, 0xf0ded1).build());
+        event.getRegistry().register(EntityEntryBuilder.create().entity(EntityScavenger.class)
+                .id(new ResourceLocation(GregTechMarketOption.MODID, "scavenger"), 28)
+                .name("scavenger")
+                .tracker(80, 3, true)
+                .egg(0x3d352f, 0xf0ded1).build());
     }
     @SideOnly(Side.CLIENT)
     public static void registerRenders() {
